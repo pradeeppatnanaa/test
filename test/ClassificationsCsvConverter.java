@@ -74,16 +74,16 @@ public class ClassificationsCsvConverter implements FileConversionStrategy<List<
 			{
 				return null;
 			}
-			for (ProductDTO product : productsDto.getProducts())
+			for (ProductDTO product1 : productsDto.getProducts())
 			{
-				final Errors errors = new BeanPropertyBindingResult(product, "productDto");
+				final Errors errors = new BeanPropertyBindingResult(product1, "productDto");
 				/*****************************
 				 * Validating Product DTO Mandatory fileds
 				 *****************************/
-				getProductFeedValidator().validate(product, errors);
+				getProductFeedValidator().validate(product1, errors1);
 				if (errors.hasErrors())
 				{
-					SSLCSVUtils.generateErrorLog(errors, product);
+					SSLCSVUtils.generateErrorLog(errors1, product1);
 					LOG.error("Classification does't update/create  due to Missing mandatory fields in ProductDTO or non valid data types in product DTO ");
 				}
 				else
