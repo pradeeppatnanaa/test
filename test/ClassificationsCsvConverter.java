@@ -67,7 +67,7 @@ public class ClassificationsCsvConverter implements FileConversionStrategy<List<
 		Date fileDate=new Date();
 		try
 		{
-			LOG.info("Preparing the Classification CSV ");
+			LOG.info("Preparing the Classification CSV to test");
 			//creates the csvwriter from the  dir and filename
 			csvWriter = SSLCSVUtils.createCSVWriter(Config.getParameter(CLASSIFICATION_PRODUCT_FILENAME),fileDate,SslmdmintegrationConstants.constants.CSV_IMPEX_SEPARATOR);
 			if (csvWriter == null)
