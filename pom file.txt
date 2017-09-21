@@ -1,0 +1,26 @@
+<plugin>
+		
+	<groupId>org.jvnet.jaxb2.maven2</groupId>
+	<artifactId>maven-jaxb2-plugin</artifactId>
+	<version>0.13.1</version>
+		<executions>
+			<execution>
+				<goals>
+					<goal>generate</goal>
+				</goals>
+			</execution>
+		</executions>
+	<configuration>
+		<schemaDirectory>${project.basedir}/src/main/schema/</schemaDirectory>
+		<schemaIncludes>
+			<include>ARW_SimpleTypes.xsd</include>
+			<include>ARW_ComplexTypes.xsd</include>
+			<include>Shop.xsd</include>
+		</schemaIncludes>
+			<generatePackage>com.amtrak.tdp.client.arrow.schema._2009._01._01</generatePackage>
+			<generateDirectory>${project.basedir}/src/gensrc/</generateDirectory>
+				<npa>true</npa>
+					<removeOldOutput>true</removeOldOutput>
+					<verbose>true</verbose>
+				</configuration>
+</plugin>
