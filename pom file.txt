@@ -6,7 +6,7 @@
 		<executions>
 			<execution>
 				<goals>
-					<goal>generate</goal>
+					<goal>${project.basedir}/src/main/schema/</goal>
 				</goals>
 			</execution>
 		</executions>
