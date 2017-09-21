@@ -6,7 +6,7 @@
 		<executions>
 			<execution>
 				<goals>
-					<goal>generate</goal>
+					<goal>generateed file</goal>
 				</goals>
 			</execution>
 		</executions>
