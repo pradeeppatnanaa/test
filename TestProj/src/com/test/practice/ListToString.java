@@ -12,11 +12,11 @@ public class ListToString
 	{
 		final List<String> listString = new ArrayList<>();
 		listString.add("2019");
-		//		listString.add("2018");
-		//		listString.add("2017");
-		//		listString.add("2016");
-		//		listString.add("2015");
-		//		listString.add("2014");
+		listString.add("2018");
+		listString.add("2017");
+		listString.add("2016");
+		listString.add("2015");
+		listString.add("2014");
 
 		final String[] stringArray1 = null;
 		System.out.println("Lenght " + stringArray1);
